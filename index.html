@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header-wrapper">
-        <a href="/" class="header-logo"
+        <a href="/index.html" class="header-logo"
           ><img class="header-logo-image" src="img/logo.svg" alt="logo"
         /></a>
         <nav class="header-nav">
@@ -327,6 +327,31 @@
       </main>
 
       <aside class="sidebar">
+        <div class="login">
+          <form class="login-form">
+            <h2 class="login-title">Авторизация</h2>
+            <input
+              type="email"
+              class="login-input login-email"
+              name="email"
+              minlength="3"
+              placeholder="email"
+            />
+            <input
+              type="password"
+              class="login-input login-password"
+              name="password"
+              minlength="3"
+              required
+              placeholder="password"
+              autocomplete="off"
+            />
+
+            <a href="#" class="login-forget">Забыли пароль?</a>
+            <button class="login-signin" type="submit">Войти</button>
+            <a href="#" class="login-signup">Регистрация</a>
+          </form>
+        </div>
         <div class="user">
           <a href="#" class="user-info">
             <img
@@ -397,6 +422,6 @@
       </aside>
       <!-- /.sidebar -->
     </div>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
